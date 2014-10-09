@@ -2,7 +2,7 @@
   <Version>2.8</Version>
   <Translator>Neverwinter Nights</Translator>
   <OptionalLibraries/>
-  <GameModule>C:\Neverwinter Nights Diamond Edition\modules\Act 4.mod</GameModule>
+  <GameModule>C:\NeverwinterNights\NWN\modules\Act 4.mod</GameModule>
   <Dialogues/>
   <StartStoryPoint library="NO LIBRARY">
     <Name>Start</Name>
@@ -405,819 +405,6 @@
             </CodeBlocks>
           </CauseIt>
           <CauseIt>
-            <Name>When &lt;acquirer&gt; acquires &lt;acquired item&gt; with &lt;stack size&gt; from &lt;object item was acquired from&gt;</Name>
-            <Labels/>
-            <Children>
-              <KnowIt>
-                <Name>Current Active</Name>
-                <Labels/>
-                <Types>
-                  <Type>Question</Type>
-                </Types>
-                <Binding flavour="function">
-                  <ScriptIt>
-                    <Name>if current story point is active</Name>
-                    <Visible>false</Visible>
-                    <Labels/>
-                    <Children/>
-                    <CodeBlocks>
-                      <CodeBlockReference>
-                        <Name>if current story point is active</Name>
-                        <Labels/>
-                        <Parameters>
-                          <KnowIt>
-                            <Name>story point</Name>
-                            <Labels/>
-                            <Types>
-                              <Type>Story Point</Type>
-                            </Types>
-                            <Binding flavour="automatic"/>
-                          </KnowIt>
-                        </Parameters>
-                      </CodeBlockReference>
-                    </CodeBlocks>
-                  </ScriptIt>
-                </Binding>
-              </KnowIt>
-              <AskIt library="ScriptEase">
-                <Name>&lt;Question&gt;</Name>
-                <Labels/>
-                <Children>
-                  <StoryComponentContainer library="NO LIBRARY">
-                    <Name>Yes:</Name>
-                    <Labels/>
-                    <Children>
-                      <KnowIt>
-                        <Name>Has Item 1</Name>
-                        <Labels/>
-                        <Types>
-                          <Type>Question</Type>
-                        </Types>
-                        <Binding flavour="function">
-                          <ScriptIt>
-                            <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                            <Visible>false</Visible>
-                            <Labels>
-                              <Label></Label>
-                            </Labels>
-                            <Children/>
-                            <CodeBlocks>
-                              <CodeBlockReference>
-                                <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                <Labels/>
-                                <Parameters>
-                                  <KnowIt>
-                                    <Name>Placeable</Name>
-                                    <Labels/>
-                                    <Types>
-                                      <Type>Placeable</Type>
-                                    </Types>
-                                    <Binding flavour="resource">plc_table002.UTP</Binding>
-                                  </KnowIt>
-                                  <KnowIt>
-                                    <Name>Item</Name>
-                                    <Labels/>
-                                    <Types>
-                                      <Type>Item</Type>
-                                    </Types>
-                                    <Binding flavour="resource">towel.UTI</Binding>
-                                  </KnowIt>
-                                </Parameters>
-                              </CodeBlockReference>
-                            </CodeBlocks>
-                          </ScriptIt>
-                        </Binding>
-                      </KnowIt>
-                      <AskIt library="ScriptEase">
-                        <Name>&lt;Question&gt;</Name>
-                        <Labels/>
-                        <Children>
-                          <StoryComponentContainer library="NO LIBRARY">
-                            <Name>Yes:</Name>
-                            <Labels/>
-                            <Children>
-                              <KnowIt>
-                                <Name>Has Item 2</Name>
-                                <Labels/>
-                                <Types>
-                                  <Type>Question</Type>
-                                </Types>
-                                <Binding flavour="function">
-                                  <ScriptIt>
-                                    <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                    <Visible>false</Visible>
-                                    <Labels>
-                                      <Label></Label>
-                                    </Labels>
-                                    <Children/>
-                                    <CodeBlocks>
-                                      <CodeBlockReference>
-                                        <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                        <Labels/>
-                                        <Parameters>
-                                          <KnowIt>
-                                            <Name>Placeable</Name>
-                                            <Labels/>
-                                            <Types>
-                                              <Type>Placeable</Type>
-                                            </Types>
-                                            <Binding flavour="resource">plc_table002.UTP</Binding>
-                                          </KnowIt>
-                                          <KnowIt>
-                                            <Name>Item</Name>
-                                            <Labels/>
-                                            <Types>
-                                              <Type>Item</Type>
-                                            </Types>
-                                            <Binding flavour="resource">tube.UTI</Binding>
-                                          </KnowIt>
-                                        </Parameters>
-                                      </CodeBlockReference>
-                                    </CodeBlocks>
-                                  </ScriptIt>
-                                </Binding>
-                              </KnowIt>
-                              <AskIt library="ScriptEase">
-                                <Name>&lt;Question&gt;</Name>
-                                <Labels/>
-                                <Children>
-                                  <StoryComponentContainer library="NO LIBRARY">
-                                    <Name>Yes:</Name>
-                                    <Labels/>
-                                    <Children>
-                                      <KnowIt>
-                                        <Name>Has Item 3</Name>
-                                        <Labels/>
-                                        <Types>
-                                          <Type>Question</Type>
-                                        </Types>
-                                        <Binding flavour="function">
-                                          <ScriptIt>
-                                            <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                            <Visible>false</Visible>
-                                            <Labels>
-                                              <Label></Label>
-                                            </Labels>
-                                            <Children/>
-                                            <CodeBlocks>
-                                              <CodeBlockReference>
-                                                <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                                <Labels/>
-                                                <Parameters>
-                                                  <KnowIt>
-                                                    <Name>Placeable</Name>
-                                                    <Labels/>
-                                                    <Types>
-                                                      <Type>Placeable</Type>
-                                                    </Types>
-                                                    <Binding flavour="resource">plc_table002.UTP</Binding>
-                                                  </KnowIt>
-                                                  <KnowIt>
-                                                    <Name>Item</Name>
-                                                    <Labels/>
-                                                    <Types>
-                                                      <Type>Item</Type>
-                                                    </Types>
-                                                    <Binding flavour="resource">facemask.UTI</Binding>
-                                                  </KnowIt>
-                                                </Parameters>
-                                              </CodeBlockReference>
-                                            </CodeBlocks>
-                                          </ScriptIt>
-                                        </Binding>
-                                      </KnowIt>
-                                      <AskIt library="ScriptEase">
-                                        <Name>&lt;Question&gt;</Name>
-                                        <Labels/>
-                                        <Children>
-                                          <StoryComponentContainer library="NO LIBRARY">
-                                            <Name>Yes:</Name>
-                                            <Labels/>
-                                            <Children>
-                                              <KnowIt>
-                                                <Name>Has Item 4</Name>
-                                                <Labels/>
-                                                <Types>
-                                                  <Type>Question</Type>
-                                                </Types>
-                                                <Binding flavour="function">
-                                                  <ScriptIt>
-                                                    <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                                    <Visible>false</Visible>
-                                                    <Labels>
-                                                      <Label></Label>
-                                                    </Labels>
-                                                    <Children/>
-                                                    <CodeBlocks>
-                                                      <CodeBlockReference>
-                                                        <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                                        <Labels/>
-                                                        <Parameters>
-                                                          <KnowIt>
-                                                            <Name>Placeable</Name>
-                                                            <Labels/>
-                                                            <Types>
-                                                              <Type>Placeable</Type>
-                                                            </Types>
-                                                            <Binding flavour="resource">plc_table002.UTP</Binding>
-                                                          </KnowIt>
-                                                          <KnowIt>
-                                                            <Name>Item</Name>
-                                                            <Labels/>
-                                                            <Types>
-                                                              <Type>Item</Type>
-                                                            </Types>
-                                                            <Binding flavour="resource">oxygentank.UTI</Binding>
-                                                          </KnowIt>
-                                                        </Parameters>
-                                                      </CodeBlockReference>
-                                                    </CodeBlocks>
-                                                  </ScriptIt>
-                                                </Binding>
-                                              </KnowIt>
-                                              <AskIt library="ScriptEase">
-                                                <Name>&lt;Question&gt;</Name>
-                                                <Labels/>
-                                                <Children>
-                                                  <StoryComponentContainer library="NO LIBRARY">
-                                                    <Name>Yes:</Name>
-                                                    <Labels/>
-                                                    <Children>
-                                                      <KnowIt>
-                                                        <Name>Has Item</Name>
-                                                        <Labels/>
-                                                        <Types>
-                                                          <Type>Question</Type>
-                                                        </Types>
-                                                        <Binding flavour="function">
-                                                          <ScriptIt>
-                                                            <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                                            <Visible>false</Visible>
-                                                            <Labels>
-                                                              <Label></Label>
-                                                            </Labels>
-                                                            <Children/>
-                                                            <CodeBlocks>
-                                                              <CodeBlockReference>
-                                                                <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                                                <Labels/>
-                                                                <Parameters>
-                                                                  <KnowIt>
-                                                                    <Name>Placeable</Name>
-                                                                    <Labels/>
-                                                                    <Types>
-                                                                      <Type>Placeable</Type>
-                                                                    </Types>
-                                                                    <Binding flavour="resource">plc_table002.UTP</Binding>
-                                                                  </KnowIt>
-                                                                  <KnowIt>
-                                                                    <Name>Item</Name>
-                                                                    <Labels/>
-                                                                    <Types>
-                                                                      <Type>Item</Type>
-                                                                    </Types>
-                                                                    <Binding flavour="resource">syringe.UTI</Binding>
-                                                                  </KnowIt>
-                                                                </Parameters>
-                                                              </CodeBlockReference>
-                                                            </CodeBlocks>
-                                                          </ScriptIt>
-                                                        </Binding>
-                                                      </KnowIt>
-                                                      <AskIt library="ScriptEase">
-                                                        <Name>&lt;Question&gt;</Name>
-                                                        <Labels/>
-                                                        <Children>
-                                                          <StoryComponentContainer library="NO LIBRARY">
-                                                            <Name>Yes:</Name>
-                                                            <Labels/>
-                                                            <Children>
-                                                              <KnowIt>
-                                                                <Name>Has Item 6</Name>
-                                                                <Labels/>
-                                                                <Types>
-                                                                  <Type>Question</Type>
-                                                                </Types>
-                                                                <Binding flavour="function">
-                                                                  <ScriptIt>
-                                                                    <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                                                    <Visible>false</Visible>
-                                                                    <Labels>
-                                                                      <Label></Label>
-                                                                    </Labels>
-                                                                    <Children/>
-                                                                    <CodeBlocks>
-                                                                      <CodeBlockReference>
-                                                                        <Name>if &lt;Placeable&gt; has &lt;Item&gt;</Name>
-                                                                        <Labels/>
-                                                                        <Parameters>
-                                                                          <KnowIt>
-                                                                            <Name>Placeable</Name>
-                                                                            <Labels/>
-                                                                            <Types>
-                                                                              <Type>Placeable</Type>
-                                                                            </Types>
-                                                                            <Binding flavour="resource">plc_table002.UTP</Binding>
-                                                                          </KnowIt>
-                                                                          <KnowIt>
-                                                                            <Name>Item</Name>
-                                                                            <Labels/>
-                                                                            <Types>
-                                                                              <Type>Item</Type>
-                                                                            </Types>
-                                                                            <Binding flavour="resource">epinephrine.UTI</Binding>
-                                                                          </KnowIt>
-                                                                        </Parameters>
-                                                                      </CodeBlockReference>
-                                                                    </CodeBlocks>
-                                                                  </ScriptIt>
-                                                                </Binding>
-                                                              </KnowIt>
-                                                              <AskIt library="ScriptEase">
-                                                                <Name>&lt;Question&gt;</Name>
-                                                                <Labels/>
-                                                                <Children>
-                                                                  <StoryComponentContainer library="NO LIBRARY">
-                                                                    <Name>Yes:</Name>
-                                                                    <Labels/>
-                                                                    <Children>
-                                                                      <ScriptIt>
-                                                                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                        <Labels>
-                                                                          <Label>NOW</Label>
-                                                                        </Labels>
-                                                                        <Children/>
-                                                                        <CodeBlocks>
-                                                                          <CodeBlockReference>
-                                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                            <Labels/>
-                                                                            <Parameters>
-                                                                              <KnowIt>
-                                                                                <Name>Enable</Name>
-                                                                                <Labels/>
-                                                                                <Types>
-                                                                                  <Type>Enable</Type>
-                                                                                </Types>
-                                                                                <Binding flavour="constant">
-                                                                                  <Type>Enable</Type>
-                                                                                  <Value>FALSE</Value>
-                                                                                </Binding>
-                                                                              </KnowIt>
-                                                                              <KnowIt>
-                                                                                <Name>dialogue line</Name>
-                                                                                <Labels/>
-                                                                                <Types>
-                                                                                  <Type>Dialogue Line</Type>
-                                                                                </Types>
-                                                                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                                              </KnowIt>
-                                                                            </Parameters>
-                                                                          </CodeBlockReference>
-                                                                          <CodeBlockReference id="1">
-                                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                            <Labels/>
-                                                                          </CodeBlockReference>
-                                                                        </CodeBlocks>
-                                                                      </ScriptIt>
-                                                                    </Children>
-                                                                  </StoryComponentContainer>
-                                                                  <StoryComponentContainer library="NO LIBRARY">
-                                                                    <Name>No:</Name>
-                                                                    <Labels/>
-                                                                    <Children>
-                                                                      <ScriptIt>
-                                                                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                        <Labels>
-                                                                          <Label>NOW</Label>
-                                                                        </Labels>
-                                                                        <Children/>
-                                                                        <CodeBlocks>
-                                                                          <CodeBlockReference>
-                                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                            <Labels/>
-                                                                            <Parameters>
-                                                                              <KnowIt>
-                                                                                <Name>Enable</Name>
-                                                                                <Labels/>
-                                                                                <Types>
-                                                                                  <Type>Enable</Type>
-                                                                                </Types>
-                                                                                <Binding flavour="constant">
-                                                                                  <Type>Enable</Type>
-                                                                                  <Value>TRUE</Value>
-                                                                                </Binding>
-                                                                              </KnowIt>
-                                                                              <KnowIt>
-                                                                                <Name>dialogue line</Name>
-                                                                                <Labels/>
-                                                                                <Types>
-                                                                                  <Type>Dialogue Line</Type>
-                                                                                </Types>
-                                                                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                                              </KnowIt>
-                                                                            </Parameters>
-                                                                          </CodeBlockReference>
-                                                                          <CodeBlockReference id="1">
-                                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                            <Labels/>
-                                                                          </CodeBlockReference>
-                                                                        </CodeBlocks>
-                                                                      </ScriptIt>
-                                                                    </Children>
-                                                                  </StoryComponentContainer>
-                                                                </Children>
-                                                                <Condition>
-                                                                  <KnowIt library="ScriptEase">
-                                                                    <Name>Question</Name>
-                                                                    <Labels/>
-                                                                    <Types>
-                                                                      <Type>Question</Type>
-                                                                    </Types>
-                                                                    <Binding flavour="reference">
-                                                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
-                                                                    </Binding>
-                                                                  </KnowIt>
-                                                                </Condition>
-                                                              </AskIt>
-                                                            </Children>
-                                                          </StoryComponentContainer>
-                                                          <StoryComponentContainer library="NO LIBRARY">
-                                                            <Name>No:</Name>
-                                                            <Labels/>
-                                                            <Children>
-                                                              <ScriptIt>
-                                                                <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                <Labels>
-                                                                  <Label>NOW</Label>
-                                                                </Labels>
-                                                                <Children/>
-                                                                <CodeBlocks>
-                                                                  <CodeBlockReference>
-                                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                    <Labels/>
-                                                                    <Parameters>
-                                                                      <KnowIt>
-                                                                        <Name>Enable</Name>
-                                                                        <Labels/>
-                                                                        <Types>
-                                                                          <Type>Enable</Type>
-                                                                        </Types>
-                                                                        <Binding flavour="constant">
-                                                                          <Type>Enable</Type>
-                                                                          <Value>TRUE</Value>
-                                                                        </Binding>
-                                                                      </KnowIt>
-                                                                      <KnowIt>
-                                                                        <Name>dialogue line</Name>
-                                                                        <Labels/>
-                                                                        <Types>
-                                                                          <Type>Dialogue Line</Type>
-                                                                        </Types>
-                                                                        <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                                      </KnowIt>
-                                                                    </Parameters>
-                                                                  </CodeBlockReference>
-                                                                  <CodeBlockReference id="1">
-                                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                    <Labels/>
-                                                                  </CodeBlockReference>
-                                                                </CodeBlocks>
-                                                              </ScriptIt>
-                                                            </Children>
-                                                          </StoryComponentContainer>
-                                                        </Children>
-                                                        <Condition>
-                                                          <KnowIt library="ScriptEase">
-                                                            <Name>Question</Name>
-                                                            <Labels/>
-                                                            <Types>
-                                                              <Type>Question</Type>
-                                                            </Types>
-                                                            <Binding flavour="reference">
-                                                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
-                                                            </Binding>
-                                                          </KnowIt>
-                                                        </Condition>
-                                                      </AskIt>
-                                                    </Children>
-                                                  </StoryComponentContainer>
-                                                  <StoryComponentContainer library="NO LIBRARY">
-                                                    <Name>No:</Name>
-                                                    <Labels/>
-                                                    <Children>
-                                                      <ScriptIt>
-                                                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                        <Labels>
-                                                          <Label>NOW</Label>
-                                                        </Labels>
-                                                        <Children/>
-                                                        <CodeBlocks>
-                                                          <CodeBlockReference>
-                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                            <Labels/>
-                                                            <Parameters>
-                                                              <KnowIt>
-                                                                <Name>Enable</Name>
-                                                                <Labels/>
-                                                                <Types>
-                                                                  <Type>Enable</Type>
-                                                                </Types>
-                                                                <Binding flavour="constant">
-                                                                  <Type>Enable</Type>
-                                                                  <Value>TRUE</Value>
-                                                                </Binding>
-                                                              </KnowIt>
-                                                              <KnowIt>
-                                                                <Name>dialogue line</Name>
-                                                                <Labels/>
-                                                                <Types>
-                                                                  <Type>Dialogue Line</Type>
-                                                                </Types>
-                                                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                              </KnowIt>
-                                                            </Parameters>
-                                                          </CodeBlockReference>
-                                                          <CodeBlockReference id="1">
-                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                            <Labels/>
-                                                          </CodeBlockReference>
-                                                        </CodeBlocks>
-                                                      </ScriptIt>
-                                                    </Children>
-                                                  </StoryComponentContainer>
-                                                </Children>
-                                                <Condition>
-                                                  <KnowIt library="ScriptEase">
-                                                    <Name>Question</Name>
-                                                    <Labels/>
-                                                    <Types>
-                                                      <Type>Question</Type>
-                                                    </Types>
-                                                    <Binding flavour="reference">
-                                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
-                                                    </Binding>
-                                                  </KnowIt>
-                                                </Condition>
-                                              </AskIt>
-                                            </Children>
-                                          </StoryComponentContainer>
-                                          <StoryComponentContainer library="NO LIBRARY">
-                                            <Name>No:</Name>
-                                            <Labels/>
-                                            <Children>
-                                              <ScriptIt>
-                                                <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                <Labels>
-                                                  <Label>NOW</Label>
-                                                </Labels>
-                                                <Children/>
-                                                <CodeBlocks>
-                                                  <CodeBlockReference>
-                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                    <Labels/>
-                                                    <Parameters>
-                                                      <KnowIt>
-                                                        <Name>Enable</Name>
-                                                        <Labels/>
-                                                        <Types>
-                                                          <Type>Enable</Type>
-                                                        </Types>
-                                                        <Binding flavour="constant">
-                                                          <Type>Enable</Type>
-                                                          <Value>TRUE</Value>
-                                                        </Binding>
-                                                      </KnowIt>
-                                                      <KnowIt>
-                                                        <Name>dialogue line</Name>
-                                                        <Labels/>
-                                                        <Types>
-                                                          <Type>Dialogue Line</Type>
-                                                        </Types>
-                                                        <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                      </KnowIt>
-                                                    </Parameters>
-                                                  </CodeBlockReference>
-                                                  <CodeBlockReference id="1">
-                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                    <Labels/>
-                                                  </CodeBlockReference>
-                                                </CodeBlocks>
-                                              </ScriptIt>
-                                            </Children>
-                                          </StoryComponentContainer>
-                                        </Children>
-                                        <Condition>
-                                          <KnowIt library="ScriptEase">
-                                            <Name>Question</Name>
-                                            <Labels/>
-                                            <Types>
-                                              <Type>Question</Type>
-                                            </Types>
-                                            <Binding flavour="reference">
-                                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
-                                            </Binding>
-                                          </KnowIt>
-                                        </Condition>
-                                      </AskIt>
-                                    </Children>
-                                  </StoryComponentContainer>
-                                  <StoryComponentContainer library="NO LIBRARY">
-                                    <Name>No:</Name>
-                                    <Labels/>
-                                    <Children>
-                                      <ScriptIt>
-                                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                        <Labels>
-                                          <Label>NOW</Label>
-                                        </Labels>
-                                        <Children/>
-                                        <CodeBlocks>
-                                          <CodeBlockReference>
-                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                            <Labels/>
-                                            <Parameters>
-                                              <KnowIt>
-                                                <Name>Enable</Name>
-                                                <Labels/>
-                                                <Types>
-                                                  <Type>Enable</Type>
-                                                </Types>
-                                                <Binding flavour="constant">
-                                                  <Type>Enable</Type>
-                                                  <Value>TRUE</Value>
-                                                </Binding>
-                                              </KnowIt>
-                                              <KnowIt>
-                                                <Name>dialogue line</Name>
-                                                <Labels/>
-                                                <Types>
-                                                  <Type>Dialogue Line</Type>
-                                                </Types>
-                                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                              </KnowIt>
-                                            </Parameters>
-                                          </CodeBlockReference>
-                                          <CodeBlockReference id="1">
-                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                            <Labels/>
-                                          </CodeBlockReference>
-                                        </CodeBlocks>
-                                      </ScriptIt>
-                                    </Children>
-                                  </StoryComponentContainer>
-                                </Children>
-                                <Condition>
-                                  <KnowIt library="ScriptEase">
-                                    <Name>Question</Name>
-                                    <Labels/>
-                                    <Types>
-                                      <Type>Question</Type>
-                                    </Types>
-                                    <Binding flavour="reference">
-                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
-                                    </Binding>
-                                  </KnowIt>
-                                </Condition>
-                              </AskIt>
-                            </Children>
-                          </StoryComponentContainer>
-                          <StoryComponentContainer library="NO LIBRARY">
-                            <Name>No:</Name>
-                            <Labels/>
-                            <Children>
-                              <ScriptIt>
-                                <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                <Labels>
-                                  <Label>NOW</Label>
-                                </Labels>
-                                <Children/>
-                                <CodeBlocks>
-                                  <CodeBlockReference>
-                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                    <Labels/>
-                                    <Parameters>
-                                      <KnowIt>
-                                        <Name>Enable</Name>
-                                        <Labels/>
-                                        <Types>
-                                          <Type>Enable</Type>
-                                        </Types>
-                                        <Binding flavour="constant">
-                                          <Type>Enable</Type>
-                                          <Value>TRUE</Value>
-                                        </Binding>
-                                      </KnowIt>
-                                      <KnowIt>
-                                        <Name>dialogue line</Name>
-                                        <Labels/>
-                                        <Types>
-                                          <Type>Dialogue Line</Type>
-                                        </Types>
-                                        <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                      </KnowIt>
-                                    </Parameters>
-                                  </CodeBlockReference>
-                                  <CodeBlockReference id="1">
-                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                    <Labels/>
-                                  </CodeBlockReference>
-                                </CodeBlocks>
-                              </ScriptIt>
-                            </Children>
-                          </StoryComponentContainer>
-                        </Children>
-                        <Condition>
-                          <KnowIt library="ScriptEase">
-                            <Name>Question</Name>
-                            <Labels/>
-                            <Types>
-                              <Type>Question</Type>
-                            </Types>
-                            <Binding flavour="reference">
-                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
-                            </Binding>
-                          </KnowIt>
-                        </Condition>
-                      </AskIt>
-                    </Children>
-                  </StoryComponentContainer>
-                  <StoryComponentContainer library="NO LIBRARY">
-                    <Name>No:</Name>
-                    <Labels/>
-                    <Children>
-                      <ScriptIt>
-                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                        <Labels>
-                          <Label>NOW</Label>
-                        </Labels>
-                        <Children/>
-                        <CodeBlocks>
-                          <CodeBlockReference>
-                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                            <Labels/>
-                            <Parameters>
-                              <KnowIt>
-                                <Name>Enable</Name>
-                                <Labels/>
-                                <Types>
-                                  <Type>Enable</Type>
-                                </Types>
-                                <Binding flavour="constant">
-                                  <Type>Enable</Type>
-                                  <Value>TRUE</Value>
-                                </Binding>
-                              </KnowIt>
-                              <KnowIt>
-                                <Name>dialogue line</Name>
-                                <Labels/>
-                                <Types>
-                                  <Type>Dialogue Line</Type>
-                                </Types>
-                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                              </KnowIt>
-                            </Parameters>
-                          </CodeBlockReference>
-                          <CodeBlockReference id="1">
-                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                            <Labels/>
-                          </CodeBlockReference>
-                        </CodeBlocks>
-                      </ScriptIt>
-                    </Children>
-                  </StoryComponentContainer>
-                </Children>
-                <Condition>
-                  <KnowIt library="ScriptEase">
-                    <Name>Question</Name>
-                    <Labels/>
-                    <Types>
-                      <Type>Question</Type>
-                    </Types>
-                    <Binding flavour="reference">
-                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/KnowIt"/>
-                    </Binding>
-                  </KnowIt>
-                </Condition>
-              </AskIt>
-            </Children>
-            <CodeBlocks>
-              <CodeBlockReference>
-                <Name>When &lt;acquirer&gt; acquires &lt;acquired item&gt; with &lt;stack size&gt; from &lt;object item was acquired from&gt;</Name>
-                <Labels/>
-                <Parameters>
-                  <KnowIt>
-                    <Name>subject</Name>
-                    <Labels/>
-                    <Types>
-                      <Type>Story &lt;Module&gt;</Type>
-                    </Types>
-                    <Binding flavour="automatic"/>
-                  </KnowIt>
-                </Parameters>
-              </CodeBlockReference>
-            </CodeBlocks>
-          </CauseIt>
-          <CauseIt>
             <Name>When &lt;item loser&gt; loses &lt;item lost&gt;</Name>
             <Labels/>
             <Children>
@@ -1244,7 +431,7 @@
                             <Types>
                               <Type>Story Point</Type>
                             </Types>
-                            <Binding flavour="automatic"/>
+                            <Binding reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[2]/Children/KnowIt/Binding/ScriptIt/CodeBlocks/CodeBlockReference/Parameters/KnowIt/Binding"/>
                           </KnowIt>
                         </Parameters>
                       </CodeBlockReference>
@@ -1481,7 +668,7 @@
                                                                     <Types>
                                                                       <Type>Placeable</Type>
                                                                     </Types>
-                                                                    <Binding flavour="resource">plc_table002.UTP</Binding>
+                                                                    <Binding reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt/Binding/ScriptIt/CodeBlocks/CodeBlockReference/Parameters/KnowIt/Binding"/>
                                                                   </KnowIt>
                                                                   <KnowIt>
                                                                     <Name>Item</Name>
@@ -1530,7 +717,7 @@
                                                                             <Types>
                                                                               <Type>Placeable</Type>
                                                                             </Types>
-                                                                            <Binding flavour="resource">plc_table002.UTP</Binding>
+                                                                            <Binding reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt/Binding/ScriptIt/CodeBlocks/CodeBlockReference/Parameters/KnowIt/Binding"/>
                                                                           </KnowIt>
                                                                           <KnowIt>
                                                                             <Name>Item</Name>
@@ -1597,46 +784,7 @@
                                                                   <StoryComponentContainer library="NO LIBRARY">
                                                                     <Name>No:</Name>
                                                                     <Labels/>
-                                                                    <Children>
-                                                                      <ScriptIt>
-                                                                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                        <Labels>
-                                                                          <Label>NOW</Label>
-                                                                        </Labels>
-                                                                        <Children/>
-                                                                        <CodeBlocks>
-                                                                          <CodeBlockReference>
-                                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                            <Labels/>
-                                                                            <Parameters>
-                                                                              <KnowIt>
-                                                                                <Name>Enable</Name>
-                                                                                <Labels/>
-                                                                                <Types>
-                                                                                  <Type>Enable</Type>
-                                                                                </Types>
-                                                                                <Binding flavour="constant">
-                                                                                  <Type>Enable</Type>
-                                                                                  <Value>TRUE</Value>
-                                                                                </Binding>
-                                                                              </KnowIt>
-                                                                              <KnowIt>
-                                                                                <Name>dialogue line</Name>
-                                                                                <Labels/>
-                                                                                <Types>
-                                                                                  <Type>Dialogue Line</Type>
-                                                                                </Types>
-                                                                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                                              </KnowIt>
-                                                                            </Parameters>
-                                                                          </CodeBlockReference>
-                                                                          <CodeBlockReference id="1">
-                                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                            <Labels/>
-                                                                          </CodeBlockReference>
-                                                                        </CodeBlocks>
-                                                                      </ScriptIt>
-                                                                    </Children>
+                                                                    <Children/>
                                                                   </StoryComponentContainer>
                                                                 </Children>
                                                                 <Condition>
@@ -1647,7 +795,7 @@
                                                                       <Type>Question</Type>
                                                                     </Types>
                                                                     <Binding flavour="reference">
-                                                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
+                                                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
                                                                     </Binding>
                                                                   </KnowIt>
                                                                 </Condition>
@@ -1657,46 +805,7 @@
                                                           <StoryComponentContainer library="NO LIBRARY">
                                                             <Name>No:</Name>
                                                             <Labels/>
-                                                            <Children>
-                                                              <ScriptIt>
-                                                                <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                <Labels>
-                                                                  <Label>NOW</Label>
-                                                                </Labels>
-                                                                <Children/>
-                                                                <CodeBlocks>
-                                                                  <CodeBlockReference>
-                                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                    <Labels/>
-                                                                    <Parameters>
-                                                                      <KnowIt>
-                                                                        <Name>Enable</Name>
-                                                                        <Labels/>
-                                                                        <Types>
-                                                                          <Type>Enable</Type>
-                                                                        </Types>
-                                                                        <Binding flavour="constant">
-                                                                          <Type>Enable</Type>
-                                                                          <Value>TRUE</Value>
-                                                                        </Binding>
-                                                                      </KnowIt>
-                                                                      <KnowIt>
-                                                                        <Name>dialogue line</Name>
-                                                                        <Labels/>
-                                                                        <Types>
-                                                                          <Type>Dialogue Line</Type>
-                                                                        </Types>
-                                                                        <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                                      </KnowIt>
-                                                                    </Parameters>
-                                                                  </CodeBlockReference>
-                                                                  <CodeBlockReference id="1">
-                                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                                    <Labels/>
-                                                                  </CodeBlockReference>
-                                                                </CodeBlocks>
-                                                              </ScriptIt>
-                                                            </Children>
+                                                            <Children/>
                                                           </StoryComponentContainer>
                                                         </Children>
                                                         <Condition>
@@ -1707,7 +816,7 @@
                                                               <Type>Question</Type>
                                                             </Types>
                                                             <Binding flavour="reference">
-                                                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
+                                                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
                                                             </Binding>
                                                           </KnowIt>
                                                         </Condition>
@@ -1717,46 +826,7 @@
                                                   <StoryComponentContainer library="NO LIBRARY">
                                                     <Name>No:</Name>
                                                     <Labels/>
-                                                    <Children>
-                                                      <ScriptIt>
-                                                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                        <Labels>
-                                                          <Label>NOW</Label>
-                                                        </Labels>
-                                                        <Children/>
-                                                        <CodeBlocks>
-                                                          <CodeBlockReference>
-                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                            <Labels/>
-                                                            <Parameters>
-                                                              <KnowIt>
-                                                                <Name>Enable</Name>
-                                                                <Labels/>
-                                                                <Types>
-                                                                  <Type>Enable</Type>
-                                                                </Types>
-                                                                <Binding flavour="constant">
-                                                                  <Type>Enable</Type>
-                                                                  <Value>TRUE</Value>
-                                                                </Binding>
-                                                              </KnowIt>
-                                                              <KnowIt>
-                                                                <Name>dialogue line</Name>
-                                                                <Labels/>
-                                                                <Types>
-                                                                  <Type>Dialogue Line</Type>
-                                                                </Types>
-                                                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                              </KnowIt>
-                                                            </Parameters>
-                                                          </CodeBlockReference>
-                                                          <CodeBlockReference id="1">
-                                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                            <Labels/>
-                                                          </CodeBlockReference>
-                                                        </CodeBlocks>
-                                                      </ScriptIt>
-                                                    </Children>
+                                                    <Children/>
                                                   </StoryComponentContainer>
                                                 </Children>
                                                 <Condition>
@@ -1767,7 +837,7 @@
                                                       <Type>Question</Type>
                                                     </Types>
                                                     <Binding flavour="reference">
-                                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
+                                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
                                                     </Binding>
                                                   </KnowIt>
                                                 </Condition>
@@ -1777,46 +847,7 @@
                                           <StoryComponentContainer library="NO LIBRARY">
                                             <Name>No:</Name>
                                             <Labels/>
-                                            <Children>
-                                              <ScriptIt>
-                                                <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                <Labels>
-                                                  <Label>NOW</Label>
-                                                </Labels>
-                                                <Children/>
-                                                <CodeBlocks>
-                                                  <CodeBlockReference>
-                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                    <Labels/>
-                                                    <Parameters>
-                                                      <KnowIt>
-                                                        <Name>Enable</Name>
-                                                        <Labels/>
-                                                        <Types>
-                                                          <Type>Enable</Type>
-                                                        </Types>
-                                                        <Binding flavour="constant">
-                                                          <Type>Enable</Type>
-                                                          <Value>TRUE</Value>
-                                                        </Binding>
-                                                      </KnowIt>
-                                                      <KnowIt>
-                                                        <Name>dialogue line</Name>
-                                                        <Labels/>
-                                                        <Types>
-                                                          <Type>Dialogue Line</Type>
-                                                        </Types>
-                                                        <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                                      </KnowIt>
-                                                    </Parameters>
-                                                  </CodeBlockReference>
-                                                  <CodeBlockReference id="1">
-                                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                                    <Labels/>
-                                                  </CodeBlockReference>
-                                                </CodeBlocks>
-                                              </ScriptIt>
-                                            </Children>
+                                            <Children/>
                                           </StoryComponentContainer>
                                         </Children>
                                         <Condition>
@@ -1827,7 +858,7 @@
                                               <Type>Question</Type>
                                             </Types>
                                             <Binding flavour="reference">
-                                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
+                                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
                                             </Binding>
                                           </KnowIt>
                                         </Condition>
@@ -1837,46 +868,7 @@
                                   <StoryComponentContainer library="NO LIBRARY">
                                     <Name>No:</Name>
                                     <Labels/>
-                                    <Children>
-                                      <ScriptIt>
-                                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                        <Labels>
-                                          <Label>NOW</Label>
-                                        </Labels>
-                                        <Children/>
-                                        <CodeBlocks>
-                                          <CodeBlockReference>
-                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                            <Labels/>
-                                            <Parameters>
-                                              <KnowIt>
-                                                <Name>Enable</Name>
-                                                <Labels/>
-                                                <Types>
-                                                  <Type>Enable</Type>
-                                                </Types>
-                                                <Binding flavour="constant">
-                                                  <Type>Enable</Type>
-                                                  <Value>TRUE</Value>
-                                                </Binding>
-                                              </KnowIt>
-                                              <KnowIt>
-                                                <Name>dialogue line</Name>
-                                                <Labels/>
-                                                <Types>
-                                                  <Type>Dialogue Line</Type>
-                                                </Types>
-                                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                              </KnowIt>
-                                            </Parameters>
-                                          </CodeBlockReference>
-                                          <CodeBlockReference id="1">
-                                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                            <Labels/>
-                                          </CodeBlockReference>
-                                        </CodeBlocks>
-                                      </ScriptIt>
-                                    </Children>
+                                    <Children/>
                                   </StoryComponentContainer>
                                 </Children>
                                 <Condition>
@@ -1887,7 +879,7 @@
                                       <Type>Question</Type>
                                     </Types>
                                     <Binding flavour="reference">
-                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
+                                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
                                     </Binding>
                                   </KnowIt>
                                 </Condition>
@@ -1897,46 +889,7 @@
                           <StoryComponentContainer library="NO LIBRARY">
                             <Name>No:</Name>
                             <Labels/>
-                            <Children>
-                              <ScriptIt>
-                                <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                <Labels>
-                                  <Label>NOW</Label>
-                                </Labels>
-                                <Children/>
-                                <CodeBlocks>
-                                  <CodeBlockReference>
-                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                    <Labels/>
-                                    <Parameters>
-                                      <KnowIt>
-                                        <Name>Enable</Name>
-                                        <Labels/>
-                                        <Types>
-                                          <Type>Enable</Type>
-                                        </Types>
-                                        <Binding flavour="constant">
-                                          <Type>Enable</Type>
-                                          <Value>TRUE</Value>
-                                        </Binding>
-                                      </KnowIt>
-                                      <KnowIt>
-                                        <Name>dialogue line</Name>
-                                        <Labels/>
-                                        <Types>
-                                          <Type>Dialogue Line</Type>
-                                        </Types>
-                                        <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                                      </KnowIt>
-                                    </Parameters>
-                                  </CodeBlockReference>
-                                  <CodeBlockReference id="1">
-                                    <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                                    <Labels/>
-                                  </CodeBlockReference>
-                                </CodeBlocks>
-                              </ScriptIt>
-                            </Children>
+                            <Children/>
                           </StoryComponentContainer>
                         </Children>
                         <Condition>
@@ -1947,7 +900,7 @@
                               <Type>Question</Type>
                             </Types>
                             <Binding flavour="reference">
-                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
+                              <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/AskIt/Children/StoryComponentContainer/Children/KnowIt"/>
                             </Binding>
                           </KnowIt>
                         </Condition>
@@ -1957,46 +910,7 @@
                   <StoryComponentContainer library="NO LIBRARY">
                     <Name>No:</Name>
                     <Labels/>
-                    <Children>
-                      <ScriptIt>
-                        <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                        <Labels>
-                          <Label>NOW</Label>
-                        </Labels>
-                        <Children/>
-                        <CodeBlocks>
-                          <CodeBlockReference>
-                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                            <Labels/>
-                            <Parameters>
-                              <KnowIt>
-                                <Name>Enable</Name>
-                                <Labels/>
-                                <Types>
-                                  <Type>Enable</Type>
-                                </Types>
-                                <Binding flavour="constant">
-                                  <Type>Enable</Type>
-                                  <Value>TRUE</Value>
-                                </Binding>
-                              </KnowIt>
-                              <KnowIt>
-                                <Name>dialogue line</Name>
-                                <Labels/>
-                                <Types>
-                                  <Type>Dialogue Line</Type>
-                                </Types>
-                                <Binding flavour="resource">deioneus_dialogu.DLG#1</Binding>
-                              </KnowIt>
-                            </Parameters>
-                          </CodeBlockReference>
-                          <CodeBlockReference id="1">
-                            <Name>&lt;Enable&gt; &lt;dialogue line&gt;</Name>
-                            <Labels/>
-                          </CodeBlockReference>
-                        </CodeBlocks>
-                      </ScriptIt>
-                    </Children>
+                    <Children/>
                   </StoryComponentContainer>
                 </Children>
                 <Condition>
@@ -2007,7 +921,7 @@
                       <Type>Question</Type>
                     </Types>
                     <Binding flavour="reference">
-                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/KnowIt"/>
+                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[3]/Children/KnowIt"/>
                     </Binding>
                   </KnowIt>
                 </Condition>
@@ -2186,7 +1100,7 @@
                       <Type>Question</Type>
                     </Types>
                     <Binding flavour="reference">
-                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[5]/Children/KnowIt"/>
+                      <KnowIt reference="/Story/StartStoryPoint/Successors/StoryPoint/Children/CauseIt[4]/Children/KnowIt"/>
                     </Binding>
                   </KnowIt>
                 </Condition>
@@ -2572,78 +1486,6 @@
                                       <Type>Placeable Animation</Type>
                                       <Value>ANIMATION_PLACEABLE_ACTIVATE</Value>
                                     </Binding>
-                                  </KnowIt>
-                                </Parameters>
-                              </CodeBlockReference>
-                            </CodeBlocks>
-                          </ScriptIt>
-                          <ScriptIt>
-                            <Name>&lt;Facing Creature&gt; faces &lt;Object To Face&gt;</Name>
-                            <Labels>
-                              <Label>TODO</Label>
-                            </Labels>
-                            <Children/>
-                            <CodeBlocks>
-                              <CodeBlockReference>
-                                <Name>&lt;Facing Creature&gt; faces &lt;Object To Face&gt;</Name>
-                                <Labels/>
-                                <Parameters>
-                                  <KnowIt>
-                                    <Name>Facing Creature</Name>
-                                    <Labels/>
-                                    <Types>
-                                      <Type>Creature</Type>
-                                    </Types>
-                                    <Binding flavour="resource">oldman001.UTC</Binding>
-                                  </KnowIt>
-                                  <KnowIt>
-                                    <Name>Object To Face</Name>
-                                    <Labels/>
-                                    <Types>
-                                      <Type>Creature</Type>
-                                      <Type>Placeable</Type>
-                                      <Type>Door</Type>
-                                      <Type>Item</Type>
-                                      <Type>Trigger</Type>
-                                      <Type>Waypoint</Type>
-                                    </Types>
-                                    <Binding flavour="resource">altar.UTP</Binding>
-                                  </KnowIt>
-                                </Parameters>
-                              </CodeBlockReference>
-                            </CodeBlocks>
-                          </ScriptIt>
-                          <ScriptIt>
-                            <Name>&lt;Facing Creature&gt; faces &lt;Object To Face&gt;</Name>
-                            <Labels>
-                              <Label>TODO</Label>
-                            </Labels>
-                            <Children/>
-                            <CodeBlocks>
-                              <CodeBlockReference>
-                                <Name>&lt;Facing Creature&gt; faces &lt;Object To Face&gt;</Name>
-                                <Labels/>
-                                <Parameters>
-                                  <KnowIt>
-                                    <Name>Facing Creature</Name>
-                                    <Labels/>
-                                    <Types>
-                                      <Type>Creature</Type>
-                                    </Types>
-                                    <Binding flavour="resource">oldman002.UTC</Binding>
-                                  </KnowIt>
-                                  <KnowIt>
-                                    <Name>Object To Face</Name>
-                                    <Labels/>
-                                    <Types>
-                                      <Type>Creature</Type>
-                                      <Type>Placeable</Type>
-                                      <Type>Door</Type>
-                                      <Type>Item</Type>
-                                      <Type>Trigger</Type>
-                                      <Type>Waypoint</Type>
-                                    </Types>
-                                    <Binding reference="/Story/StartStoryPoint/Successors/StoryPoint/Successors/StoryPoint/Children/CauseIt/Children/AskIt/Children/StoryComponentContainer/Children/ScriptIt[9]/CodeBlocks/CodeBlockReference/Parameters/KnowIt[2]/Binding"/>
                                   </KnowIt>
                                 </Parameters>
                               </CodeBlockReference>
